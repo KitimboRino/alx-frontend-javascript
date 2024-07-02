@@ -9,12 +9,11 @@
  */
 
 export default function cleanSet(set, startString) {
-    // Filter set values that start with startString and map them to the trimmed substring
-    const filteredValues = [...set]
-      .filter(value => value.startsWith(startString))
-      .map(value => value.substring(startString.length).trim());
-    
-    // Join filtered values with '-'
-    return filteredValues.join('-');
-  }
-  
+  // Filter set values that start with startString and map them to the trimmed substring
+  const filteredValues = [...set]
+    .filter((value) => value.startsWith(startString))
+    .map((value) => value.substring(startString.length).trim());
+
+  // Join filtered values with '-'
+  return filteredValues.join('-');
+}
