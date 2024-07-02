@@ -1,4 +1,9 @@
-function getListStudents() {
+/**
+ * Retrieves a list of students.
+ * @author Rino Kitimbo <https://github.com/KitimboRino>
+ * @returns {{id: Number, firstName: String, location: String}[]}
+ */
+export default function getListStudents() {
   return [
     { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
     { id: 2, firstName: 'James', location: 'Columbia' },
